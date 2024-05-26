@@ -50,6 +50,10 @@ require FCPATH . 'app/Config/Paths.php';
 
 define('ENVIRONMENT', 'development');
 
+
+// Path to the support directory.
+defined('SUPPORTPATH') || define('SUPPORTPATH', realpath(__DIR__ . '/../support') . DIRECTORY_SEPARATOR);
+
 $paths = new Config\Paths();
 
 // LOAD THE FRAMEWORK BOOTSTRAP FILE
